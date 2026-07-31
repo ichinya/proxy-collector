@@ -1,0 +1,36 @@
+name: Feature request
+description: Propose a scoped capability or improvement
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What user or operational problem should this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed outcome
+      description: Describe behavior and acceptance criteria, not only an implementation.
+    validations:
+      required: true
+  - type: textarea
+    id: contracts
+    attributes:
+      label: Contracts and related projects
+      description: Identify affected schemas, APIs, queues, repositories, and compatibility risks.
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope check
+      options:
+        - label: The request contains no credentials, private proxy lists, customer data, or infrastructure secrets.
+          required: true
